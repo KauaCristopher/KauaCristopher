@@ -6,11 +6,7 @@ teste
 
 <br>
 
-### 📬 Entre em Contato  
 
-- **Email**: [kaua.c.m.brito@gmail.com](mailto:kaua.c.m.brito@gmail.com)
-- **LinkedIn**: [Meu perfil](www.linkedin.com/in/kauã-cristopher-24)
-- **Telefone**: [11 98762-9303]  
 
 <br>
 
@@ -98,7 +94,15 @@ teste
 <img 
     align="left" 
     alt="GitHub Stats" 
-    height="200" 
+    height="230" 
     style="padding-right: 10px;" 
     src="https://github-readme-stats.vercel.app/api?username=KauaCristopher&show_icons=true&theme=radical&include_all_commits=true&locale=pt-br" 
 />
+<br>
+<br>
+
+### 📬 Entre em Contato  
+
+- **Email**: [kaua.c.m.brito@gmail.com](mailto:kaua.c.m.brito@gmail.com)
+- **LinkedIn**: [Meu perfil](www.linkedin.com/in/kauã-cristopher-24)
+- **Telefone**: 11 98762-9303  
