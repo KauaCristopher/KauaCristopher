@@ -1,11 +1,18 @@
 # 👩🏻‍💻 Kauã Cristopher
 
-**`Desenvolvedor FullStack`**
+**`Desenvolvedor Junior`**
 
 teste
 
+<br>
 
----
+### 📬 Entre em Contato  
+
+- **Email**: [kaua@example.com](mailto:kaua@example.com)  
+- **LinkedIn**: [Meu Perfil](https://www.linkedin.com/in/seu-perfil)  
+- **Portfólio Online**: [Link](#)  
+
+<br>
 
 ### 🤖 Linguagens e Tecnologias
 
@@ -33,14 +40,7 @@ teste
     style="padding-right: 10px;" 
     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" 
 />
-<img 
-    align="left" 
-    alt="TypeScript"
-    title="TypeScript" 
-    width="30px" 
-    style="padding-right: 10px;" 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" 
-/>
+
 <img 
     align="left" 
     alt="React"
@@ -49,38 +49,7 @@ teste
     style="padding-right: 10px;" 
     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" 
 />
-<img 
-    align="left" 
-    alt="Next.js" 
-    title="Next.js"
-    width="30px" 
-    style="padding-right: 10px;" 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" 
-/>
-<img 
-    align="left" 
-    alt="Bootstrap"
-    title="Bootstrap" 
-    width="30px" 
-    style="padding-right: 10px;" 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" 
-/>
-<img 
-    align="left" 
-    alt="Tailwind" 
-    title="Tailwind"
-    width="30px" 
-    style="padding-right: 10px;" 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" 
-/>
-<img 
-    align="left" 
-    alt="SASS" 
-    title="SASS"
-    width="30px" 
-    style="padding-right: 10px;" 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" 
-/>
+ 
 <img 
     align="left" 
     alt="PHP" 
@@ -89,22 +58,7 @@ teste
     style="padding-right: 10px;" 
     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" 
 />
-<img 
-    align="left" 
-    alt="Laravel" 
-    title="Laravel"
-    width="30px" 
-    style="padding-right: 10px;" 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" 
-/>
-<img 
-    align="left" 
-    alt="JQuery" 
-    title="JQuery"
-    width="30px" 
-    style="padding-right: 10px;" 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg" 
-/>
+
 <img 
     align="left" 
     alt="Git" 
@@ -121,26 +75,30 @@ teste
     style="padding-right: 10px;" 
     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" 
 />
+<br>
+<br>
 
-<br/>
-<br/>
+### 🚀 Projetos  
 
-### 📊 Estatísticas
+- **[Portfolio Website](#)**: Um site pessoal desenvolvido com HTML, CSS e JavaScript para apresentar meus trabalhos.  
+- **[Gestor de Tarefas](#)**: Aplicação web feita em PHP e Laravel para gerenciamento de tarefas, com autenticação de usuário.  
+- **[Calculadora Online](#)**: Uma calculadora interativa feita com React.  
 
-<p>
-  <img 
+<br>
+
+### 📜 Certificados  
+
+- **Curso de Desenvolvimento Web Completo - [Udemy](https://www.udemy.com/)**  
+- **PHP do Zero ao Avançado - [Alura](https://www.alura.com.br/)**  
+
+
+
+<br>
+
+<img 
     align="left" 
     alt="GitHub Stats" 
     height="200" 
     style="padding-right: 10px;" 
-    src="https://github-readme-stats.vercel.app/api?username=Larissakich&show_icons=true&theme=tokyonight&include_all_commits=true&locale=pt-br" 
-  />
-
-<img 
-      align="left" 
-      alt="GitHub Stats" 
-      height="200" 
-      src="https://github-readme-stats.vercel.app/api/top-langs/?username=larissakich&theme=tokyonight&layout=compact&custom_title=Tecnologias&langs_count=9" 
-  />
-
-</p>
+    src="https://github-readme-stats.vercel.app/api?username=KauaCristopher&show_icons=true&theme=radical&include_all_commits=true&locale=pt-br" 
+/>
