@@ -101,10 +101,16 @@ teste
 
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 
 ### 📬 Entre em Contato  
-<clas p ><style p align="left"  >
 - **Email**: [kaua.c.m.brito@gmail.com](mailto:kaua.c.m.brito@gmail.com)
 - **LinkedIn**: [Meu perfil](www.linkedin.com/in/kauã-cristopher-24)
 - **Telefone**: 11 98762-9303  
-</clas>
+
