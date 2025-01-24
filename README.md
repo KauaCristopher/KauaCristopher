@@ -1,4 +1,4 @@
-# 👩🏻‍💻 Kauã Cristopher
+# 👨‍💻 Kauã Cristopher
 
 **`Desenvolvedor Junior`**
 
@@ -8,9 +8,9 @@ teste
 
 ### 📬 Entre em Contato  
 
-- **Email**: [kaua@example.com](mailto:kaua@example.com)  
-- **LinkedIn**: [Meu Perfil](https://www.linkedin.com/in/seu-perfil)  
-- **Portfólio Online**: [Link](#)  
+- **Email**: [kaua.c.m.brito@gmail.com](mailto:kaua.c.m.brito@gmail.com)
+- **LinkedIn**: [Meu perfil](www.linkedin.com/in/kauã-cristopher-24)
+- **Telefone**: [11 98762-9303]  
 
 <br>
 
