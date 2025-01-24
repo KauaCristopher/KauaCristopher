@@ -2,11 +2,9 @@
 
 **`Desenvolvedor Junior`**
 
-teste
-
 <br>
 
-
+Olá! Sou um desenvolvedor Junior, eu estudo programação des de 2022. Comecei a estudar assistindo videos do Gustavo Guanabara e dei inicio na minha jornada no html, hoje ja dominio algumas linguagens de programação e pratico todas todos os dias e continuo desenvolvendo-me e estudando mais linguagens para me tornanr full stack e criando meu portfólio com projetos práticos. 🚀  
 
 <br>
 
@@ -71,6 +69,24 @@ teste
     style="padding-right: 10px;" 
     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" 
 />
+
+<img 
+    align="left" 
+    alt="MY SQL" 
+    title="MY SQL"
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="/home/codespace/KauaCristopher/README/img/sql-server-icon-png-11359.png"
+/>
+<img 
+    align="left" 
+    alt="SQLite3" 
+    title="SQLite3"
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="/home/codespace/KauaCristopher/README/img/1024x600-sqlite-282687.png"
+/>
+
 <br>
 <br>
 
