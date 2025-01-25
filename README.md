@@ -94,7 +94,7 @@ Olá! Sou um desenvolvedor Junior, eu estudo programação des de 2022. Comecei 
     title="FRAMER"
     width="30px" 
     style="padding-right: 10px;" 
-    src=""
+    src="https://github.com/KauaCristopher/KauaCristopher/blob/main/Captura%20de%20tela%202025-01-25%20184601.png"
 />
 
 <br>
