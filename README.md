@@ -101,7 +101,7 @@ Olá! Sou um desenvolvedor Junior, eu estudo programação des de 2022. Comecei 
 ### 📜 Certificados  
  
 
-- **[MEUS CERTIFICADOS](#https://1drv.ms/f/c/bc358d5a14e5a858/Eh2nRVsr84pKiyY0FRMaa5ABIoD5e_KSpjuB1eBBDZeHsg?e=dJrJAa)**
+- **[MEUS CERTIFICADOS](https://1drv.ms/f/c/bc358d5a14e5a858/Eh2nRVsr84pKiyY0FRMaa5ABIoD5e_KSpjuB1eBBDZeHsg?e=dJrJAa)**
 
 <br>
 
