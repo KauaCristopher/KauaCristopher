@@ -84,7 +84,7 @@ Olá! Sou um desenvolvedor Junior, eu estudo programação des de 2022. Comecei 
     title="SQLite3"
     width="30px" 
     style="padding-right: 10px;" 
-    src="/home/codespace/KauaCristopher/README/img/1024x600-sqlite-282687.png"
+    src="1024x600-sqlite-282687.png"
 />
 
 <br>
