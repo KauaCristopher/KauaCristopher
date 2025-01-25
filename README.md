@@ -100,10 +100,9 @@ Olá! Sou um desenvolvedor Junior, eu estudo programação des de 2022. Comecei 
 
 ### 📜 Certificados  
 
-- **Curso de Desenvolvimento Web Completo - [Udemy](https://www.udemy.com/)**  
-- **PHP do Zero ao Avançado - [Alura](https://www.alura.com.br/)**  
-
-
+<img
+src="https://1drv.ms/f/c/bc358d5a14e5a858/Eh2nRVsr84pKiyY0FRMaa5ABIoD5e_KSpjuB1eBBDZeHsg?e=dJrJAa">
+/>
 
 <br>
 
