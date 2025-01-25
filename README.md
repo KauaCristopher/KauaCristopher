@@ -76,7 +76,7 @@ Olá! Sou um desenvolvedor Junior, eu estudo programação des de 2022. Comecei 
     title="MY SQL"
     width="30px" 
     style="padding-right: 10px;" 
-    src="/home/codespace/KauaCristopher/README/img/sql-server-icon-png-11359.png"
+    src="sql-server-icon-png-11359.png"
 />
 <img 
     align="left" 
