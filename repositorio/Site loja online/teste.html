@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste - Céu Noturno</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #000;
+            overflow: hidden;
+        }
+
+        .stars {
+            width: 1px;
+            height: 1px;
+            background: transparent;
+            box-shadow: 1000px 200px #FFF, 1200px 300px #FFF, 1400px 400px #FFF, 1600px 500px #FFF, 1800px 600px #FFF, 2000px 700px #FFF, 2200px 800px #FFF, 2400px 900px #FFF, 2600px 1000px #FFF, 2800px 1100px #FFF, 3000px 1200px #FFF, 3200px 1300px #FFF, 3400px 1400px #FFF, 3600px 1500px #FFF, 3800px 1600px #FFF, 4000px 1700px #FFF, 4200px 1800px #FFF, 4400px 1900px #FFF, 4600px 2000px #FFF, 4800px 2100px #FFF, 5000px 2200px #FFF, 5200px 2300px #FFF, 5400px 2400px #FFF, 5600px 2500px #FFF, 5800px 2600px #FFF, 6000px 2700px #FFF, 6200px 2800px #FFF, 6400px 2900px #FFF, 6600px 3000px #FFF, 6800px 3100px #FFF, 7000px 3200px #FFF, 7200px 3300px #FFF, 7400px 3400px #FFF, 7600px 3500px #FFF, 7800px 3600px #FFF, 8000px 3700px #FFF;
+            animation: animStar 50s linear infinite;
+        }
+
+        .stars:after {
+            content: ' ';
+            position: absolute;
+            top: 2000px;
+            width: 1px;
+            height: 1px;
+            background: transparent;
+            box-shadow: 1000px 200px #FFF, 1200px 300px #FFF, 1400px 400px #FFF, 1600px 500px #FFF, 1800px 600px #FFF, 2000px 700px #FFF, 2200px 800px #FFF, 2400px 900px #FFF, 2600px 1000px #FFF, 2800px 1100px #FFF, 3000px 1200px #FFF, 3200px 1300px #FFF, 3400px 1400px #FFF, 3600px 1500px #FFF, 3800px 1600px #FFF, 4000px 1700px #FFF, 4200px 1800px #FFF, 4400px 1900px #FFF, 4600px 2000px #FFF, 4800px 2100px #FFF, 5000px 2200px #FFF, 5200px 2300px #FFF, 5400px 2400px #FFF, 5600px 2500px #FFF, 5800px 2600px #FFF, 6000px 2700px #FFF, 6200px 2800px #FFF, 6400px 2900px #FFF, 6600px 3000px #FFF, 6800px 3100px #FFF, 7000px 3200px #FFF, 7200px 3300px #FFF, 7400px 3400px #FFF, 7600px 3500px #FFF, 7800px 3600px #FFF, 8000px 3700px #FFF;
+        }
+
+        @keyframes animStar {
+            from { transform: translateY(0px); }
+            to { transform: translateY(-2000px); }
+        }
+
+        .moon {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            width: 150px;
+            height: 150px;
+            background: #FFF;
+            border-radius: 50%;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+            transform: translateX(-50%);
+            transition: transform 0.3s ease;
+        }
+
+        .moon:hover {
+            transform: translateX(-50%) scale(1.1);
+        }
+
+        .message {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #FFF;
+            text-align: center;
+        }
+
+        .message h1 {
+            font-size: 2em;
+            margin: 0;
+        }
+
+        .message p {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="stars"></div>
+    <a href="index.html">
+        <div class="moon"></div>
+    </a>
+    <div class="message">
+        <h1>Site em Construção</h1>
+        <p>Este site não está completo com tudo que sei, pois é apenas uma pequena amostra e um teste.</p>
+    </div>
+</body>
+</html>

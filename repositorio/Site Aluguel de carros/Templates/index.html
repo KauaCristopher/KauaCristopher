@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxDrive | Aluguel Premium de Veículos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="C:\Users\kcchb\OneDrive\Desktop\repositorio\Site Aluguel de carros\Style.css">
+    <link rel="script" href="C:\Users\kcchb\OneDrive\Desktop\repositorio\Site Aluguel de carros\Script.js">
+</head>
+<body>
+    <nav class="nav-container">
+        <div class="nav-content">
+            <div class="brand">LuxDrive</div>
+            <div class="nav-links">
+                <a href="#" class="nav-link">Início</a>
+                <a href="#" class="nav-link">Frota</a>
+                <a href="#" class="nav-link">Serviços</a>
+                <a href="#" class="nav-link">Contato</a>
+            </div>
+            <div class="cta-buttons">
+                <a href="login_registro.html"><button class="btn btn-secondary">Login</button></a>
+                <a href="login_registro.html"><button class="btn btn-primary">Registrar</button></a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="search-hero">
+        <div class="hero-overlay"></div>
+        <div class="search-container">
+            <h1>Encontre Seu Carro dos Sonhos</h1>
+            
+            <div class="search-form">
+                <div class="form-grid">
+                    <!-- Tipo de Carro -->
+                    <div class="input-group">
+                        <i class="fas fa-car"></i>
+                        <select id="car-type">
+                            <option value="">Tipo de Carro</option>
+                            <option value="suv">SUV</option>
+                            <option value="sedan">Sedan</option>
+                            <option value="hatch">Hatch</option>
+                            <option value="esportivo">Esportivo</option>
+                            <option value="luxo">Luxo</option>
+                        </select>
+                    </div>
+    
+                    <!-- Faixa de Preço -->
+                    <div class="input-group">
+                        <i class="fas fa-dollar-sign"></i>
+                        <select id="price-range">
+                            <option value="">Faixa de Preço</option>
+                            <option value="0-200">Até R$ 200/dia</option>
+                            <option value="200-400">R$ 200 - R$ 400/dia</option>
+                            <option value="400-600">R$ 400 - R$ 600/dia</option>
+                            <option value="600+">Acima de R$ 600/dia</option>
+                        </select>
+                    </div>
+    
+                    <!-- Marca -->
+                    <div class="input-group">
+                        <i class="fas fa-tag"></i>
+                        <select id="car-brand">
+                            <option value="">Marca</option>
+                            <option value="audi">Audi</option>
+                            <option value="bmw">BMW</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="porsche">Porsche</option>
+                            <option value="tesla">Tesla</option>
+                        </select>
+                    </div>
+    
+                    <!-- Botão de Busca -->
+                    <button class="btn btn-primary search-button">
+                        <i class="fas fa-search"></i> Buscar Carros
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Seção de Resultados -->
+    <section class="search-results-section">
+        <div class="results-container">
+            <div class="results-grid" id="results-grid">
+                <!-- Os cards serão injetados aqui via JavaScript -->
+            </div>
+            
+            <!-- Mensagem de Sem Resultados -->
+            <div class="no-results" id="no-results">
+                <i class="fas fa-car-crash"></i>
+                <p>Nenhum carro encontrado com esses filtros.</p>
+            </div>
+        </div>
+    </section>
+        
+<section class="controls-section">
+    <div class="controls-container">
+        <!-- Ordenação -->
+
+        <!-- Paginação -->
+        <div class="pagination">
+            <button class="btn btn-secondary" id="prev-page"><i class="fas fa-chevron-left"></i></button>
+            <span id="current-page">1</span>
+            <button class="btn btn-secondary" id="next-page"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+</section>
+
+        <section class="featured-cars">
+            <div class="section-header animated">
+                <h2>Veículos em Destaque</h2>
+                <p>Explore nossa seleção premium</p>
+            </div>
+            <div class="cars-grid">
+                <!-- Veículo 1 -->
+                <div class="car-card">
+                    <div class="car-image">
+                        <img 
+                            src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=480&q=80" 
+                            loading="lazy"
+                            alt="Porsche 911 Carrera"
+                        >
+                        <div class="car-price">R$ 450/dia</div>
+                    </div>
+                    <div class="car-details">
+                        <h3>Porsche 911 Carrera</h3>
+                        <div class="car-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 8.2km/L</span>
+                            <span><i class="fas fa-users"></i> 2 Lugares</span>
+                        </div>
+                        <button class="btn btn-primary">Reservar Agora</button>
+                    </div>
+                </div>
+            
+                <!-- Veículo 2 -->
+                <div class="car-card">
+                    <div class="car-image">
+                        <img 
+                            src="https://images.unsplash.com/photo-1507136566006-cfc505b114fc?auto=format&fit=crop&w=480&q=80" 
+                            loading="lazy"
+                            alt="BMW M4 Competition"
+                        >
+                        <div class="car-price">R$ 380/dia</div>
+                    </div>
+                    <div class="car-details">
+                        <h3>BMW M4 Competition</h3>
+                        <div class="car-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 7.8km/L</span>
+                            <span><i class="fas fa-users"></i> 4 Lugares</span>
+                        </div>
+                        <button class="btn btn-primary">Reservar Agora</button>
+                    </div>
+                </div>
+            
+                <!-- Veículo 3 -->
+                <div class="car-card">
+                    <div class="car-image">
+                        <img 
+                            src="https://images.unsplash.com/photo-1493238792000-8113da705763?auto=format&fit=crop&w=480&q=80" 
+                            loading="lazy"
+                            alt="Mercedes-AMG GT"
+                        >
+                        <div class="car-price">R$ 550/dia</div>
+                    </div>
+                    <div class="car-details">
+                        <h3>Mercedes-AMG GT</h3>
+                        <div class="car-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 7.5km/L</span>
+                            <span><i class="fas fa-users"></i> 2 Lugares</span>
+                        </div>
+                        <button class="btn btn-primary">Reservar Agora</button>
+                    </div>
+                </div>
+            
+                <!-- Veículo 4 -->
+                <div class="car-card">
+                    <div class="car-image">
+                        <img 
+                            src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=480&q=80" 
+                            loading="lazy"
+                            alt="Audi R8 V10"
+                        >
+                        <div class="car-price">R$ 420/dia</div>
+                    </div>
+                    <div class="car-details">
+                        <h3>Audi R8 V10</h3>
+                        <div class="car-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 7.0km/L</span>
+                            <span><i class="fas fa-users"></i> 2 Lugares</span>
+                        </div>
+                        <button class="btn btn-primary">Reservar Agora</button>
+                    </div>
+                </div>
+            
+                <!-- Veículo 5 -->
+                <div class="car-card">
+                    <div class="car-image">
+                        <img 
+                            src="https://images.unsplash.com/photo-1616788494707-ec28f08fd05a?auto=format&fit=crop&w=480&q=80" 
+                            loading="lazy"
+                            alt="Jaguar F-Type"
+                        >
+                        <div class="car-price">R$ 320/dia</div>
+                    </div>
+                    <div class="car-details">
+                        <h3>Jaguar F-Type</h3>
+                        <div class="car-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 8.0km/L</span>
+                            <span><i class="fas fa-users"></i> 2 Lugares</span>
+                        </div>
+                        <button class="btn btn-primary">Reservar Agora</button>
+                    </div>
+                </div>
+            
+                <!-- Veículo 6 -->
+                <div class="car-card">
+                    <div class="car-image">
+                        <img 
+                            src="https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=480&q=80" 
+                            loading="lazy"
+                            alt="McLaren 720S"
+                        >
+                        <div class="car-price">R$ 400/dia</div>
+                    </div>
+                    <div class="car-details">
+                        <h3>McLaren 720S</h3>
+                        <div class="car-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 6.5km/L</span>
+                            <span><i class="fas fa-users"></i> 2 Lugares</span>
+                        </div>
+                        <button class="btn btn-primary">Reservar Agora</button>
+                    </div>
+                </div>
+            
+                <!-- Veículo 7 -->
+                <div class="car-card">
+                    <div class="car-image">
+                        <img 
+                            src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=480&q=80" 
+                            loading="lazy"
+                            alt="Ferrari 488 GTB"
+                        >
+                        <div class="car-price">R$ 600/dia</div>
+                    </div>
+                    <div class="car-details">
+                        <h3>Ferrari 488 GTB</h3>
+                        <div class="car-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 6.2km/L</span>
+                            <span><i class="fas fa-users"></i> 2 Lugares</span>
+                        </div>
+                        <button class="btn btn-primary">Reservar Agora</button>
+                    </div>
+                </div>
+            
+                <!-- Veículo 8 -->
+                <div class="car-card">
+                    <div class="car-image">
+                        <img 
+                            src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=480&q=80" 
+                            loading="lazy"
+                            alt="Lamborghini Huracán"
+                        >
+                        <div class="car-price">R$ 700/dia</div>
+                    </div>
+                    <div class="car-details">
+                        <h3>Lamborghini Huracán</h3>
+                        <div class="car-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 5.8km/L</span>
+                            <span><i class="fas fa-users"></i> 2 Lugares</span>
+                        </div>
+                        <button class="btn btn-primary">Reservar Agora</button>
+                    </div>
+                </div>
+            
+                <!-- Veículo 9 -->
+                <div class="car-card">
+                    <div class="car-image">
+                        <img 
+                            src="https://images.unsplash.com/photo-1619682817481-e994891cd1f5?auto=format&fit=crop&w=480&q=80" 
+                            loading="lazy"
+                            alt="Tesla Model S Plaid"
+                        >
+                        <div class="car-price">R$ 500/dia</div>
+                    </div>
+                    <div class="car-details">
+                        <h3>Tesla Model S Plaid</h3>
+                        <div class="car-specs">
+                            <span><i class="fas fa-bolt"></i> Elétrico</span>
+                            <span><i class="fas fa-users"></i> 5 Lugares</span>
+                        </div>
+                        <button class="btn btn-primary">Reservar Agora</button>
+                    </div>
+                </div>
+            
+                <!-- Veículo 10 -->
+                <div class="car-card">
+                    <div class="car-image">
+                        <img 
+                            src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=480&q=80" 
+                            loading="lazy"
+                            alt="Aston Martin DB11"
+                        >
+                        <div class="car-price">R$ 580/dia</div>
+                    </div>
+                    <div class="car-details">
+                        <h3>Aston Martin DB11</h3>
+                        <div class="car-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 7.2km/L</span>
+                            <span><i class="fas fa-users"></i> 4 Lugares</span>
+                        </div>
+                        <button class="btn btn-primary">Reservar Agora</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        
+        <!-- Adicionar outras seções conforme necessário -->
+
+<script>
+      // Função para carregar imagens de forma otimizada
+function lazyLoadImages() {
+    const carImages = document.querySelectorAll('.car-image img');
+                
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+    if (entry.isIntersecting) {
+    const img = entry.target;
+    img.src = img.dataset.src;
+    img.onload = () => {
+    img.style.opacity = 1;
+    img.parentElement.classList.add('loaded');
+};
+ observer.unobserve(img);
+}
+});
+ }, {
+rootMargin: '200px',
+    threshold: 0.01
+});
+        
+carImages.forEach(img => {
+    img.dataset.src = img.src;
+    img.removeAttribute('src');
+    img.style.opacity = 0;
+    img.style.transition = 'opacity 0.5s ease';
+    observer.observe(img);
+});
+}
+        
+    // Inicialização quando o DOM estiver pronto
+document.addEventListener('DOMContentLoaded', () => {
+    lazyLoadImages();
+});
+
+// Dados Atualizados dos Carros
+const carData = [
+    {
+        id: 1,
+        type: 'esportivo',
+        brand: 'porsche',
+        price: 450,
+        pricePerHour: 90,
+        image: 'https://images.unsplash.com/photo-1555215695-3004980ad54e',
+        model: '911 Carrera',
+        specs: {
+            fuelType: 'gasolina',
+            consumption: '8.2 km/L',
+            seats: 2,
+            transmission: 'Automático PDK',
+            potencia: '450cv'
+        }
+    },
+    {
+        id: 2,
+        type: 'luxo',
+        brand: 'mercedes',
+        price: 600,
+        pricePerHour: 120,
+        image: 'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7',
+        model: 'S-Class',
+        specs: {
+            fuelType: 'gasolina',
+            consumption: '9.5 km/L',
+            seats: 5,
+            transmission: 'Automático 9G-TRONIC',
+            potencia: '367cv'
+        }
+    },
+    {
+        id: 3,
+        type: 'suv',
+        brand: 'tesla',
+        price: 550,
+        pricePerHour: 110,
+        image: 'https://images.unsplash.com/photo-1619682817481-e994891cd1f5',
+        model: 'Model X',
+        specs: {
+            fuelType: 'elétrico',
+            autonomy: '560 km',
+            seats: 7,
+            transmission: 'Automático',
+            potencia: '503cv'
+        }
+    },
+    {
+        id: 4,
+        type: 'hatch',
+        brand: 'volkswagen',
+        price: 220,
+        pricePerHour: 45,
+        image: 'https://images.unsplash.com/photo-1583121274602-3e2820c69888',
+        model: 'Golf GTI',
+        specs: {
+            fuelType: 'gasolina',
+            consumption: '12.5 km/L',
+            seats: 5,
+            transmission: 'Manual 6 velocidades',
+            potencia: '245cv'
+        }
+    },
+    {
+        id: 5,
+        type: 'esportivo',
+        brand: 'ferrari',
+        price: 800,
+        pricePerHour: 160,
+        image: 'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7',
+        model: '488 GTB',
+        specs: {
+            fuelType: 'gasolina',
+            consumption: '6.8 km/L',
+            seats: 2,
+            transmission: 'Automático F1',
+            potencia: '661cv'
+        }
+    },
+    {
+        id: 6,
+        type: 'luxo',
+        brand: 'rolls-royce',
+        price: 1200,
+        pricePerHour: 240,
+        image: 'https://images.unsplash.com/photo-1617531653332-bd46c24f2068',
+        model: 'Phantom',
+        specs: {
+            fuelType: 'gasolina',
+            consumption: '7.2 km/L',
+            seats: 4,
+            transmission: 'Automático 8 velocidades',
+            potencia: '563cv'
+        }
+    }
+];
+
+// Função de Filtragem Corrigida
+function filterCars() {
+    const typeFilter = document.getElementById('car-type').value.toLowerCase();
+    const priceFilter = document.getElementById('price-range').value;
+    const brandFilter = document.getElementById('car-brand').value.toLowerCase();
+
+    const filteredCars = carData.filter(car => {
+        // Verificar tipo
+        if (typeFilter && car.type !== typeFilter) return false;
+        
+        // Verificar marca
+        if (brandFilter && car.brand !== brandFilter) return false;
+        
+        // Verificar preço
+        if (priceFilter) {
+            const [min, max] = priceFilter.split('-').map(Number);
+            if (max) {
+                if (car.price < min || car.price > max) return false;
+            } else {
+                if (car.price < min) return false;
+            }
+        }
+        
+        return true;
+    });
+
+    displayResults(filteredCars);
+}
+
+// Exibir Resultados Detalhados
+function displayResults(cars) {
+    const resultsGrid = document.getElementById('results-grid');
+    const noResults = document.getElementById('no-results');
+    
+    resultsGrid.innerHTML = '';
+    
+    if (cars.length === 0) {
+        noResults.style.display = 'block';
+        return;
+    }
+    
+    noResults.style.display = 'none';
+    
+    cars.forEach(car => {
+        const card = document.createElement('div');
+        card.className = 'car-card';
+        card.innerHTML = `
+            <div class="car-image">
+                <img src="${car.image}" alt="${car.brand} ${car.model}" loading="lazy">
+                <div class="car-price">
+                    <span>R$ ${car.price}/dia</span>
+                    <span>R$ ${car.pricePerHour}/hora</span>
+                </div>
+            </div>
+            <div class="car-details">
+                <h3>${car.brand.toUpperCase()} ${car.model}</h3>
+                <div class="car-specs">
+                    ${car.specs.fuelType === 'elétrico' ? 
+                        `<p><i class="fas fa-charging-station"></i> Autonomia: ${car.specs.autonomy}</p>` : 
+                        `<p><i class="fas fa-gas-pump"></i> Consumo: ${car.specs.consumption}</p>`}
+                    <p><i class="fas fa-users"></i> Lugares: ${car.specs.seats}</p>
+                    <p><i class="fas fa-cog"></i> Câmbio: ${car.specs.transmission}</p>
+                    <p><i class="fas fa-horse-head"></i> Potência: ${car.specs.potencia}</p>
+                </div>
+                <button class="btn btn-primary">Reservar Agora</button>
+            </div>
+        `;
+        resultsGrid.appendChild(card);
+    });
+}
+
+// Restante do código mantido igual
+// Event Listeners
+document.querySelector('.search-button').addEventListener('click', filterCars);
+document.querySelectorAll('.filter-group select').forEach(select => {
+    select.addEventListener('change', filterCars);
+});
+
+// Inicialização
+document.addEventListener('DOMContentLoaded', () => {
+    filterCars(); // Exibe todos os carros inicialmente
+});
+</script>
+
+    </body>
+    </html>

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polo Basic</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            max-width: 150px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #007BFF;
+        }
+
+        .product-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .slideshow-container {
+            flex: 1;
+            max-width: 600px;
+            margin: 20px;
+            position: relative;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        .mySlides img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .mySlides img:hover {
+            transform: scale(1.05);
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            color: black;
+            font-weight: bold;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+            border-radius: 3px;
+            user-select: none;
+            transform: translateY(-50%);
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev {
+            left: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+            color: #fff;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+
+        .product-info {
+            flex: 1;
+            max-width: 600px;
+            margin: 20px;
+        }
+
+        .product-info h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .product-info p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .product-info .old-price {
+            text-decoration: line-through;
+            color: red;
+        }
+
+        .product-info .discount-price {
+            color: green;
+        }
+
+        .product-info button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .product-info button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        .product-info select {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+
+        .product-info select:focus {
+            border-color: #007BFF;
+            outline: none;
+        }
+
+        .description-toggle {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            margin-top: 20px;
+            transition: color 0.3s ease;
+        }
+
+        .description-toggle:hover {
+            color: #007BFF;
+        }
+
+        .description-toggle .arrow {
+            margin-left: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .description-content {
+            display: none;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        .other-products {
+            margin-top: 40px;
+        }
+
+        .other-products h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            
+        }
+
+        .other-products .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .other-products .product-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .other-products .product-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .other-products .product-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .other-products .product-item h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .other-products .product-item .price {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .other-products .product-item .old-price {
+            text-decoration: line-through;
+            color: #999;
+        }
+
+        .other-products .product-item .discount {
+            color: #e74c3c;
+        }
+
+        .other-products .product-item button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .other-products .product-item button:hover {
+            background-color: #50b615;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .product-details {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .slideshow-container, .product-info {
+                max-width: 100%;
+                margin: 10px 0;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="../Img/logo.png" alt="Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../produtos.html">Produtos</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                    <li><a href="../novidades.html">Novidades</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="product-details">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="../Img\Camiseta Esportiva com Gola V.avif" alt="">
+            </div>
+            <div class="mySlides fade">
+                <img src="../Img\Camiseta Esportiva com Gola V2.avif" alt="">
+            </div>
+            <div class="mySlides fade">
+                <img src="" alt="">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="product-info">
+            <h1>Polo Basic</h1>
+            <p class="old-price">R$ 329,00</p>
+            <p class="discount-price">R$ 189,00</p>
+            <p>Opções de cores:</p>
+            <select id="color-select" onchange="changeColor()">
+                <option value="azul">Azul</option>
+                <option value="preto">Preto</option>
+                <option value="branco">Branco</option>
+            </select>
+            <p>Tamanho:</p>
+            <select>
+                <option value="p">P</option>
+                <option value="m">M</option>
+                <option value="g">G</option>
+                <option value="gg">GG</option>
+            </select>
+            <button onclick="addToCart('1', 'Polo Basic', 189, '../Img/PH4012_132_20.avif')">Comprar</button>
+            <div class="description-toggle" onclick="toggleDescription()">
+                <span>Ver descrição</span>
+                <span class="arrow">&#9660;</span>
+            </div>
+            <div class="description-content">
+                <h2>Descrição</h2><br>
+                    <br>
+                    <h6>ciência TH1561-23</h6>
+                    <br>
+                    <p>Com seu decote em V em ribana e detalhes refinados, esta camiseta masculina lisa de mangas curtas se tornará um clássico instantâneo em seu guarda-roupa. Sendo um item básico essencial na composição de qualquer look, esta peça original Lacoste eleva o conceito básico para um estilo com autenticidade sem esforço. 
+                        <br>Confeccionada em jérsei de algodão respirável, esta peça esportiva compõe um look casual e, ao mesmo tempo, elegante. Dessa maneira, seu conforto para uma ocasião mais descontraída, formal ou esportiva não ficará de lado com essa camiseta masculina lisa. Um pequeno e emblemático crocodilo verde estampado no tórax completa este novo item atemporal. Com esse ícone da marca, você incorpora uma história de excelência em moda que só a Lacoste possui em suas roupas. Feita com materiais de alta qualidade, esta peça é garantia de durabilidade e estilo duradouro. Confira todos os detalhes e informações desta camiseta masculina lisa da Lacoste:
+                    Decote V em ribana
+                    <br>
+                    <ul>
+                        <li>Jérsei tecnológico de mistura de algodão</li>
+                        <li>Regular fit</li>
+                        <li>Costura decorativa</li>
+                        <li>Transfer de crocodilo verde no tórax</li>
+                    </ul>
+                    <br>
+                    Concha: Algodão (65%), Poliéster (35%) / Gola: Algodão (50%), Poliéster (50%)</p>
+            </div>
+        </div>
+    </div>
+    <div class="other-products">
+        <h2>Opções em destaque</h2>
+        <div class="grid-container">
+            <div class="product-item">
+                <a href="produto2.html" target="_blank">
+                    <img src="../Img/TH1561_031_24.avif" alt="Produto 2">
+                </a>
+                <h3>Camiseta Lacoste</h3>
+                <p class="price"><span class="old-price">R$ 180,00</span> R$ 150,00 <span class="discount">Desconto</span></p>
+                <button onclick="addToCart('2', 'Camiseta Lacoste', 150, '../Img/TH1561_031_24.avif')">Comprar</button>
+            </div>
+            <div class="product-item">
+                <a href="produto3.html" target="_blank">
+                    <img src="../Img/AH1985_166_20.avif" alt="Produto 3">
+                </a>
+                <h3>Conjunto casual esportivo</h3>
+                <p class="price"><span class="old-price">R$ 250,00</span> R$ 200,00 <span class="discount">Desconto</span></p>
+                <button onclick="addToCart('3', 'Conjunto Casual Esportivo', 200, '../Img/AH1985_166_20.avif')">Comprar</button>
+            </div>
+            <div class="product-item">
+                <a href="produto4.html" target="_blank">
+                    <img src="../Img/SH4589_CCA_20.avif" alt="Produto 4">
+                </a>
+                <h3>Produto 4</h3>
+                <p class="price"><span class="old-price">R$ 300,00</span> R$ 250,00 <span class="discount">Desconto</span></p>
+                <button onclick="addToCart('4', 'Produto 4', 250, '../Img/SH4589_CCA_20.avif')">Comprar</button>
+            </div>
+            <div class="product-item">
+                <a href="produto5.html" target="_blank">
+                    <img src="../Img/produto5.png" alt="Produto 5">
+                </a>
+                <h3>Produto 5</h3>
+                <p class="price"><span class="old-price">R$ 350,00</span> R$ 300,00 <span class="discount">Desconto</span></p>
+                <button onclick="addToCart('5', 'Produto 5', 300, '../Img/produto5.png')">Comprar</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Minha Loja Virtual. Todos os direitos reservados.</p>
+    </footer>
+    <script src="../scripts.js"></script>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+
+        function toggleDescription() {
+            const content = document.querySelector('.description-content');
+            const arrow = document.querySelector('.description-toggle .arrow');
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+                arrow.style.transform = "rotate(180deg)";
+            } else {
+                content.style.display = "none";
+                arrow.style.transform = "rotate(0deg)";
+            }
+        }
+
+        function changeColor() {
+            const color = document.getElementById('color-select').value;
+            let slideIndex;
+            switch(color) {
+                case 'azul':
+                    slideIndex = 1;
+                    break;
+                case 'preto':
+                    slideIndex = 2;
+                    break;
+                case 'branco':
+                    slideIndex = 3;
+                    break;
+            }
+            showSlides(slideIndex);
+        }
+    </script>
+</body>
+</html>

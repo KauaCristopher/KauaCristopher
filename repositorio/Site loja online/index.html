@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja Virtual</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="./Img/Daco_5398124.png" alt="Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="teste.html">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Novidades</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <input type="text" placeholder="Pesquisar..." class="search-bar" onkeyup="searchProducts()">
+                <a href="sacola.html" class="cart">Sacola (<span id="cart-count">0</span>)</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <div class="banner">
+        <img src="Img/Banner.avif" alt="Banner" class="banner-image">
+        <div class="banner-content">
+            <h1>Bem-vindo à Nossa Loja</h1>
+            <p>Confira nossas ofertas especiais!</p>
+            <button onclick="window.location.href='produtos.html'">Ver Produtos</button>
+        </div>
+    </div>
+
+    <div class="grid-container" id="product-list">
+        <div class="product-item">
+            <a href="Produtos/produto1.html" target="_blank">
+                <img src="Img/PH4012_132_20.avif" alt="Produto 1">
+            </a>
+            <h3>Polo basic</h3>
+            <p class="price"><span class="old-price">R$ 120,00</span> R$ 100,00 <span class="discount">Desconto</span></p>
+            <button onclick="addToCart('1', 'Polo Basic', 100, 'Img/PH4012_132_20.avif')">Comprar</button>
+        </div>
+        <div class="product-item">
+            <a href="Produtos/produto2.html" target="_blank">
+                <img src="Img/TH1561_031_24.avif" alt="Produto 2">
+            </a>
+            <h3>Camiseta lacoste</h3>
+            <p class="price"><span class="old-price">R$ 180,00</span> R$ 150,00 <span class="discount">Desconto</span></p>
+            <button onclick="addToCart('2', 'Camiseta Lacoste', 150, 'Img/TH1561_031_24.avif')">Comprar</button>
+        </div>
+        <div class="product-item">
+            <a href="Produtos/produto3.html" target="_blank">
+                <img src="Img/AH1985_166_20.avif" alt="Produto 3">
+            </a>
+            <h3>Conjunto casual esportivo</h3>
+            <p class="price"><span class="old-price">R$ 250,00</span> R$ 200,00 <span class="discount">Desconto</span></p>
+            <button onclick="addToCart('3', 'Conjunto Casual Esportivo', 200, 'Img/AH1985_166_20.avif')">Comprar</button>
+        </div>
+        <!-- Adicione mais produtos conforme necessário -->
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

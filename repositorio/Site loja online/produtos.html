@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Minha Loja Virtual</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+           <img href="index.html" src="./Img/Daco_5398124.png"  alt="Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="teste.html">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Novidades</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <input type="text" placeholder="Pesquisar..." class="search-bar" onkeyup="searchProducts()">
+                <a href="sacola.html" class="cart">Sacola (<span id="cart-count">0</span>)</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <div class="banner">
+        <img src="Img/Banner.avif" alt="Banner" class="banner-image">
+        <div class="banner-content">
+            <h1>Nossos Produtos</h1>
+            <p>Confira nossa seleção de produtos!</p>
+        </div>
+    </div>
+
+    <div class="grid-container" id="product-list">
+        <div class="product-item">
+            <a href="Produtos/produto1.html" target="_blank">
+                <img src="Img/PH4012_132_20.avif" alt="Produto 1">
+            </a>
+            <h3>Polo basic</h3>
+            <p class="price"><span class="old-price">R$ 120,00</span> R$ 100,00 <span class="discount">Desconto</span></p>
+            <button onclick="addToCart('1', 'Polo Basic', 100, 'Img/PH4012_132_20.avif')">Comprar</button>
+        </div>
+
+        <div class="product-item">
+            <a href="Produtos/produto2.html" target="_blank">
+                <img src="Img/TH1561_031_24.avif" alt="Produto 2">
+            </a>
+            <h3>Camiseta lacoste</h3>
+            <p class="price"><span class="old-price">R$ 180,00</span> R$ 150,00 <span class="discount">Desconto</span></p>
+            <button onclick="addToCart('2', 'Camiseta Lacoste', 150, 'Img/TH1561_031_24.avif')">Comprar</button>
+        </div>
+
+        <div class="product-item">
+            <a href="teste.html" target="_blank">
+                <img src="Img/AH1985_166_20.avif" alt="Produto 3">
+            </a>
+            <h3>Conjunto casual esportivo</h3>
+            <p class="price"><span class="old-price">R$ 250,00</span> R$ 200,00 <span class="discount">Desconto</span></p>
+            <button onclick="addToCart('3', 'Conjunto Casual Esportivo', 200, 'Img/AH1985_166_20.avif')">Comprar</button>
+        </div>
+
+        <div class="product-item">
+            <a href="teste.html" target="_blank">
+                <img src="Img/tenistop.avif" alt="Produto 4">
+            </a>
+            <h3>Tênis Masculino L003 Neo Tech</h3>
+            <p class="price"><span class="old-price">R$ 1.399,00</span> R$839,00 <span class="discount">(40%) Desconto</span></p>
+            <button onclick="addToCart('4', 'Tênis Masculino L003 Neo Tech', 839, 'Img/Produto4.avif')">Comprar</button>
+        </div>
+
+        <div class="product-item">
+            <a href="teste.html" target="_blank">
+                <img src="./Img/Calça Esportiva Paris em Piqué.avif" alt="Produto 5">
+            </a>
+            <h3>Calça Esportiva Paris em Piqué</h3>
+            <p class="price"><span class="old-price">R$ 829,00</span> R$ 739,99 <span class="discount">Desconto</span></p>
+            <button onclick="addToCart('5', 'Calça Esportiva Paris em Piqué', 739.99, 'Img/Produto5.avif')">Comprar</button>
+        </div>
+
+        <div class="product-item">
+            <a href="teste.html" target="_blank">
+                <img src="Img/Camisa Masculina Clássica em Algodão.avif" alt="Produto 6">
+            </a>
+            <h3>Camisa Masculina Clássica em Algodão</h3>
+            <p class="price"><span class="old-price"></span> R$ 749,00 <span class="discount"></span></p>
+            <button onclick="addToCart('6', 'Camisa Masculina Clássica em Algodão', 749, 'Img/Produto6.avif')">Comprar</button>
+        </div>
+
+        <div class="product-item">
+            <a href="teste.html" target="_blank">
+                <img src="Img/Moletom de painel de malha esportivo.avif" alt="Produto 7">
+            </a>
+            <h3>Moletom de painel de malha esportivo</h3>
+            <p class="price"><span class="old-price">R$ 689,00</span> R$ 409,00 <span class="discount">Desconto</span></p>
+            <button onclick="addToCart('7', 'Moletom de painel de malha esportivo', 409, 'Img/Produto7.avif')">Comprar</button>
+        </div>
+
+        <div class="product-item">
+            <a href="teste.html" target="_blank">
+                <img src="Img/Camiseta de algodão com efeito piqué com slogan nas costas.avif" alt="Produto 8">
+            </a>
+            <h3>Camiseta de algodão com efeito piqué com slogan nas costas</h3>
+            <p class="price"><span class="old-price">R$ 429,00</span> R$ 249,00 <span class="discount">Desconto</span></p>
+            <button onclick="addToCart('8', 'Camiseta de algodão com efeito piqué com slogan nas costas', 249, 'Img/Produto8.avif')">Comprar</button>
+        </div>
+
+        <div class="product-item">
+            <a href="teste.html" target="_blank">
+                <img src="Img/Camiseta de Algodão com Efeito Lavado Oversized.avif" alt="Produto 9">
+            </a>
+            <h3>Camiseta de Algodão com Efeito Lavado Oversizedo</h3>
+            <p class="price"><span class="old-price">R$ 130,00</span> R$ 429,00 <span class="discount">Desconto</span></p>
+            <button onclick="addToCart('9', 'Camiseta de Algodão com Efeito Lavado Oversized', 429, 'Img/Produto9.avif')">Comprar</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
