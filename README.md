@@ -102,9 +102,8 @@ Olá! Sou um desenvolvedor Junior, eu estudo programação des de 2022. Comecei 
 
 ### 🚀 Projetos  
 
-- **[Portfolio Website](https://github.com/KauaCristopher/KauaCristopher/blob/main/repositorio/Site%20Aluguel%20de%20carros/Templates/index.html)**: Um site pessoal desenvolvido com HTML, CSS e JavaScript para apresentar meus trabalhos.  
-- **[Gestor de Tarefas](#)**: Aplicação web feita em PHP e Laravel para gerenciamento de tarefas, com autenticação de usuário.  
-- **[Calculadora Online](#)**: Uma calculadora interativa feita com React.  
+- **[Loja Online](https://kauacristopher.github.io/Loja-online/)**:  Uma loja online que fiz apenas uma amostra, posso fazer muito mais que só isso...
+- **[Gestor de Taluguel de carros](https://kauacristopher.github.io/Lux-Cars/)**: Um site amostra de uma loja que faz aluguel de carros de luxo...   
 
 <br>
 
