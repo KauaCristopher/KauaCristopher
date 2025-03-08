@@ -104,7 +104,7 @@ Olá! Sou um desenvolvedor Junior, eu estudo programação des de 2022. Comecei 
 
 - **[Loja Online](https://kauacristopher.github.io/Loja-online/)**:  Uma loja online que fiz apenas uma amostra, posso fazer muito mais que só isso...
 - **[Gestor de Aluguel de carros](https://kauacristopher.github.io/Lux-Cars/)**: Um site amostra de uma loja que faz aluguel de carros de luxo...   
-
+- **[Sobre Mim](https://kauacristopher.github.io/Sobre-mim/)**: Pagina de aprrsentação minha feita em HTML - CSS & Js
 <br>
 
 ### 📜 Certificados  
