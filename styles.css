@@ -1,0 +1,353 @@
+/* Reset e Variáveis de Cor */
+:root {
+    --cor-primaria: #1a1a1a;
+    --cor-secundaria: #2d2d2d;
+    --cor-destaque: #3498db;
+    --texto-claro: #ffffff;
+    --texto-cinza: #f0f0f0;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--cor-primaria);
+    color: var(--texto-cinza);
+  }
+
+  /* Cabeçalho */
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    background-color: rgba(26, 26, 26, 0.95);
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  }
+
+  header .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--texto-claro);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  nav a {
+    color: var(--texto-claro);
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+  }
+
+  nav a:hover {
+    background-color: var(--cor-destaque);
+  }
+
+  .cta-btn {
+    background-color: var(--cor-destaque);
+    color: var(--texto-claro);
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+  }
+
+  /* Seção Hero */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 7rem 5% 5rem;
+    background: linear-gradient(45deg, rgba(26,26,26,0.9), rgba(26,26,26,0.9)),
+                url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1920');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--texto-claro);
+    animation: slideDown 1s ease;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: var(--texto-cinza);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  /* Seções */
+  section {
+    padding: 5rem 5%;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 1s;
+  }
+
+  section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: var(--texto-claro);
+    position: relative;
+  }
+
+  h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--cor-destaque);
+  }
+
+  /* Serviços */
+  .servicos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .servico {
+    background-color: var(--cor-secundaria);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .servico:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+
+  .servico span {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  /* Portfólio */
+
+.github-card {
+    background: var(--cor-secundaria);
+    padding: 2.5rem;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+  }
+
+  .github-card:hover {
+    transform: translateY(-10px);
+  }
+
+  .github-card i.fab {
+    font-size: 4rem;
+    color: var(--cor-destaque);
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+
+  .github-card:hover i.fab {
+    transform: rotate(360deg);
+  }
+
+  .github-card h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--texto-claro);
+  }
+
+  .github-card p {
+    color: var(--texto-cinza);
+    margin-bottom: 2rem;
+  }
+
+  .github-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 1rem 2rem;
+    background: var(--cor-destaque);
+    color: var(--texto-claro);
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+  }
+
+  .github-btn:hover {
+    background: #2980b9;
+    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+    gap: 15px;
+  }
+
+  .github-btn i {
+    transition: transform 0.3s ease;
+  }
+
+  .github-btn:hover i {
+    transform: translateX(5px);
+  }
+
+  @media (max-width: 768px) {
+    .github-card {
+      padding: 1.5rem;
+    }
+    
+    .github-btn {
+      padding: 0.8rem 1.5rem;
+    }
+  }
+
+  /* Contato */
+  .contato form {
+    max-width: 600px;
+    margin: 2rem auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  input, textarea {
+    padding: 1rem;
+    background-color: var(--cor-secundaria);
+    border: none;
+    border-radius: 5px;
+    color: var(--texto-claro);
+  }
+
+  input:focus, textarea:focus {
+    outline: 2px solid var(--cor-destaque);
+  }
+
+  /* Rodapé */
+  footer {
+    background-color: var(--cor-secundaria);
+    padding: 3rem 5%;
+    text-align: center;
+  }
+
+  /* Animacoes */
+  @keyframes slideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+
+  /* Botão Voltar ao Topo */
+
+ .back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--cor-destaque);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid var(--texto-claro);
+    position: relative;
+    transition: 0.3s;
+  }
+
+  .arrow-up::after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -12px;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid var(--cor-destaque);
+    z-index: -1;
+  }
+
+  .back-to-top:hover .arrow-up {
+    transform: translateY(-3px);
+  }
+
+  /* Responsivo */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
+    }
+
+    nav ul {
+      flex-direction: column;
+      text-align: center;
+      gap: 0.5rem;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+
+    .servicos-container, .portfolio-container {
+      grid-template-columns: 1fr;
+    }
+}
