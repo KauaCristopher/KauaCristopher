@@ -103,9 +103,11 @@ Atualmente, pratico e estudo diariamente para me tornar um desenvolvedor full st
 
 ### 🚀 Projetos  
 
-- **[Loja Online](https://kauacristopher.github.io/Loja-online/)**:  Uma loja online que fiz apenas uma amostra, posso fazer muito mais que só isso...
-- **[Gestor de Aluguel de carros](https://kauacristopher.github.io/Lux-Cars/)**: Um site amostra de uma loja que faz aluguel de carros de luxo...   
-- **[Sobre Mim](https://kauacristopher.github.io/Sobre-mim/)**: Pagina de aprrsentação minha feita em HTML - CSS & Js
+- **[Loja Online](https://kauacristopher.github.io/Loja-online/)**:  Site feito com HTML - CSS & JavaScript. O site foi feito inteiramente por mim em 2024 mas não completei o site porém apresento funções interessantes para apresentar um pouco de minhas habilidades na contrução do back-end e front-end.
+  
+- **[Gestor de Aluguel de carros](https://kauacristopher.github.io/Lux-Cars/)**: Um site feito com HTML - CSS & JavaScript. O  site apresenta funções detalhistas e um filtro de busca para veiculos, uma ótima apresentação visual e praticidade na navegação oou escolha de alugar um veículo. (Site em construção)
+   
+- **[Sobre Mim](https://kauacristopher.github.io/Sobre-mim/)**: Um  blog feito em HTML - CSS & JavaScript. blog feito para apresentar minhas habilidades. Fiz este site mais focado no CSS e HTML para demosntrar como posso trazer um visual mais atraebte para qualquer site e praticidade visual em poucas linhas de codígo
 <br>
 
 ### 📜 Certificados  
