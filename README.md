@@ -4,8 +4,9 @@
 
 <br>
 
-Olá! Sou um desenvolvedor Junior, eu estudo programação des de 2022. Comecei a estudar assistindo videos do Gustavo Guanabara e dei inicio na minha jornada no html, hoje ja dominio algumas linguagens de programação e pratico todas todos os dias e continuo desenvolvendo-me e estudando mais linguagens para me tornanr full stack e criando meu portfólio com projetos práticos. 🚀  
+Olá! Sou o Kauã Cristopher.
 
+Atualmente, pratico e estudo diariamente para me tornar um desenvolvedor full stack, sempre buscando novos desafios e aperfeiçoando meu portfólio.
 <br>
 
 ### 🤖 Linguagens e Tecnologias
